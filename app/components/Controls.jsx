@@ -18,7 +18,7 @@ var Controls = React.createClass({
     var renderStartStopButton = () => {
       if (countdownStatus === 'Started') {
           return <button className="button secondary" onClick={this.onStatusChanged('Paused')}>Pause</button>;
-      } else if (countdownStatus === 'Paused') {
+      } else {
         return <button className="button primary" onClick={this.onStatusChanged('Started')}>Start</button>;
       }
     };

@@ -20,13 +20,10 @@ var Countdown = React.createClass({
           this.setState({
             count: 0
           });
-          this.stopTimer();
-          break;
         case 'Paused':
           this.stopTimer();
           break;
         default:
-
       }
     }
   },
